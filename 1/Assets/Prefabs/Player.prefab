@@ -424,7 +424,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uiAmountSoul: {fileID: 0}
-  _hpPerSoul: 10
+  _hpPerSoul: 2
   _uiKey: {fileID: 0}
   _amountSouls: 0
 --- !u!114 &441285589303059358

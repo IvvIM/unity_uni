@@ -43,13 +43,12 @@ public class InventorySystem : MonoBehaviour
 
     public void Heal()
     {
-        _amountSouls -= 1;
-        _playerHP.RestoreHP(_hpPerSoul);
-    }
+        if (_amountSouls <= 0)
+            return;
 
-    public void Relode()
-    {
-        _amountSouls -= 1;
+        _amountSouls -= 5;
+        _uiAmountSoul.SetText(_amountSouls.ToString());
+        _playerHP.RestoreHP(_hpPerSoul * 5);
     }
     #endregion
 

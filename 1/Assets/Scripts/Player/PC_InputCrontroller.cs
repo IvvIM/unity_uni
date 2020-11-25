@@ -45,6 +45,8 @@ public class PC_InputCrontroller : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.E))
             _openCrate = true;
+        if (Input.GetKeyDown(KeyCode.H))
+            _inv.Heal();
     }
 
     private void FixedUpdate()
