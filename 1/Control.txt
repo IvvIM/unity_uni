@@ -1,0 +1,7 @@
+Input.GetAxisRaw("Horizontal");
+Input.GetButtonDown("Jump")
+Input.GetKeyDown(KeyCode.C)) = crouch
+Input.GetKeyDown(KeyCode.Mouse0) = shoot
+Input.GetKeyDown(KeyCode.F) = Melee attack
+Input.GetKeyDown(KeyCode.E) = openCrate
+Input.GetKeyDown(KeyCode.H) = Heal
