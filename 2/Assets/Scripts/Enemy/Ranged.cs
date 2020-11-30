@@ -2,17 +2,35 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ranged : MonoBehaviour
+public class Ranged : Enemy
 {
-    // Start is called before the first frame update
-    void Start()
+    protected bool CanHitInPlayer()
     {
-        
+        //Перевірка чи сутність здатна потрапити в гравця
     }
 
-    // Update is called once per frame
-    void Update()
+    protected void StartShoot()
     {
-        
+        //Початок пострілу
+    }
+
+    protected void Shoot()
+    {
+        //Постріл
+    }
+
+    protected void EndShoot()
+    {
+        //Кінець постріоу
+    }
+
+    protected void StratRelode()
+    {
+        //Початок перезарядки
+    }
+
+    protected void EndRelode()
+    {
+        //Кінець перезарядки
     }
 }

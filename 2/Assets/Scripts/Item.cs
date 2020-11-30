@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item : MonoBehaviour
+public abstract class Item : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public virtual bool CanPickUp()
     {
-        
+        //Перевірка чи може гравець підняти предмет
     }
 
-    // Update is called once per frame
-    void Update()
+    protected virtual void PickedUp()
     {
-        
+        // Віконуеться коли гравець підняв предмет
     }
 }

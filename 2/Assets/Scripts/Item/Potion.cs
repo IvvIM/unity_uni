@@ -2,17 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Potion : MonoBehaviour
+public abstract class Potion : Item
 {
-    // Start is called before the first frame update
-    void Start()
+    enum PotionName
     {
-        
+        //enum з назвами ефектів
     }
 
-    // Update is called once per frame
-    void Update()
+    protected void ApplyEffectToPlayer()
     {
-        
+        //Застосовує ефект на гравця
     }
 }

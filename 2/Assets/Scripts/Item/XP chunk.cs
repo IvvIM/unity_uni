@@ -2,17 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class XPchunk : MonoBehaviour
+public class XPchunk : Item
 {
-    // Start is called before the first frame update
-    void Start()
+    public int GetAmountXP()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        //Повертайся кількість очків опита
     }
 }

@@ -4,10 +4,6 @@ using UnityEngine;
 
 public abstract class Interactable : MonoBehaviour
 {
-    protected virtual void FixedUpdate()
-    {
-    }
-
     public virtual void ConfirmInteract()
     {
         //Метод який викликається коли гравець починає взаємодіяти з сутністю
@@ -35,7 +31,7 @@ public abstract class Interactable : MonoBehaviour
         //Викликає деякі методи при вході гравця в зону дій
     }
 
-    protected virtual void OnTriggerExit()
+    protected virtual void OnPlayerExit()
     {
         //Викликає деякі методи при виході гравця з зони дій
     }

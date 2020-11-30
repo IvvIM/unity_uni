@@ -2,17 +2,46 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public abstract class Enemy : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    protected virtual bool PlayerCanInteract()
     {
-        
+        //Перевірка чи гравець може взаємодіяти з сутністю (Чи сутність може атакувати гравця) 
     }
 
-    // Update is called once per frame
-    void Update()
+    protected virtual void StartFollowPlayer()
     {
-        
+        //Початок переслідування гравця
     }
+
+    protected virtual void FollowPlayer()
+    {
+        //Переслідування гравця
+    }
+
+    protected virtual void EndFollowPlayer()
+    {
+        //Закінчення переслідування гравця
+    }
+
+    protected virtual void СanFollowPlayer()
+    {
+        //Перевірка чи може сутність переслідувати гравця
+    }
+
+    protected virtual void OnDeath()
+    {
+        //Смерть сутності
+    }
+
+    protected virtual void LootsSpawn()
+    {
+        //Поява предметів
+    }
+
+    public virtual bool IsFollowPlayer()
+    {
+        //Перевірка чи cутність переслідуе гравця
+    }
+
 }
